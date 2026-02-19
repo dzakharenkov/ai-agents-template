@@ -1,0 +1,23 @@
+﻿# Worktree directories
+architect-work/
+developer-work/
+tester-work/
+security-work/
+documentor-work/
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# OS
+.DS_Store
+.env
