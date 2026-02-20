@@ -1,7 +1,11 @@
-﻿# 👨‍💻 Developer Agent
+# 👨‍💻 Developer Agent
 
 ## Role
 Senior Full-Stack Developer
+
+## Workspace
+- **Working directory:** `./work-developer/`
+- **Git branch:** `feature-implementation`
 
 ## Responsibilities
 - Code implementation
