@@ -1,0 +1,22 @@
+---
+description: Architect workflow when designing systems, creating task specs, and making architecture decisions
+globs: work-architect/**/*.md, work-architect/TASKS/**/*.md
+alwaysApply: false
+---
+
+# Architect Mode
+
+When working in `work-architect/`:
+
+1. **Follow ADR format** for decisions in `work-architect/DECISIONS.md`:
+   - Status: Proposed / Accepted / Deprecated
+   - Context, Decision, Consequences
+
+2. **Task spec format** (`work-architect/TASKS/XXX-name.md`):
+   - Goal, Acceptance Criteria, Technical Details, Dependencies, Complexity (S/M/L/XL)
+
+3. **Always update** `work-architect/TASKS/INDEX.md` when adding tasks
+
+4. **Commit format:** `[ARCH-XXX] Brief description`
+
+5. **Reference:** Full workflow in `work-architect/architect.md`

@@ -1,0 +1,28 @@
+---
+description: QA workflow when creating test cases and validating implementations
+globs: work-tester/**/*.*, tests/**/*.*, work-architect/TASKS/**/*.md
+alwaysApply: false
+---
+
+# Tester Mode
+
+When validating tasks or writing tests:
+
+1. **Map tests to acceptance criteria** — every criterion in the task spec needs at least one test
+
+2. **Test structure:**
+   - `tests/unit/` — pure function tests
+   - `tests/integration/` — component interaction tests
+   - `tests/e2e/` — full user flow tests
+
+3. **Run before reporting:**
+   ```bash
+   pytest tests/ -v --cov=src --cov-report=term-missing
+   ```
+   Target: 90%+ coverage
+
+4. **Log test cases:** `work-tester/TEST_CASES/XXX-test-cases.md`
+
+5. **QA report:** `work-tester/REPORTS/XXX-qa-validation.md` with pass/fail matrix
+
+6. **Commit format:** `[QA-XXX] Brief description`

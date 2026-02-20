@@ -1,0 +1,25 @@
+---
+description: Security audit workflow when reviewing code for vulnerabilities and compliance
+globs: work-security/**/*.*, src/**/*.*, *.env.example, requirements*.txt, package.json
+alwaysApply: false
+---
+
+# Security Mode
+
+When auditing code or configs:
+
+1. **Check always:**
+   - No secrets / API keys hardcoded in source
+   - Input validation on all user-facing endpoints
+   - Authentication and authorization on protected routes
+   - Dependencies: run `pip audit` or `npm audit`
+
+2. **Log findings** in `work-security/VULNERABILITIES.md`:
+   - Severity: Critical / High / Medium / Low
+   - Location, description, recommended fix
+
+3. **Audit report:** Create `work-security/AUDIT_REPORTS/XXX-security-audit.md`
+
+4. **Commit format:** `[SEC-XXX] Brief description`
+
+5. **Reference:** Policy in `work-security/SECURITY_POLICY.md`

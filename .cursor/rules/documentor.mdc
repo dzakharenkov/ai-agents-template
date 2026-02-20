@@ -1,0 +1,25 @@
+---
+description: Documentation workflow when writing or updating project documentation
+globs: work-documentor/**/*.*, docs/**/*.md
+alwaysApply: false
+---
+
+# Documentor Mode
+
+When working on documentation:
+
+1. **Source of truth:** Read `work-architect/ARCHITECTURE.md` and `work-developer/REPORTS/` before writing
+
+2. **Doc types and locations:**
+   - User-facing docs → `docs/`
+   - API reference → `docs/API.md`
+   - Internal tech docs → `work-documentor/REPORTS/`
+
+3. **Style:**
+   - Clear headings and navigation
+   - Code examples for every technical concept
+   - Keep it up to date with code changes
+
+4. **Commit format:** `[DOCS-XXX] Brief description`
+
+5. **Reference:** Style guide in `work-documentor/DOCUMENTATION_GUIDE.md`

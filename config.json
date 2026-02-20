@@ -1,4 +1,12 @@
-﻿{
-  "project": "AI Agents System",
-  "created": "2026-02-19"
+{
+  "template": "ai-agents-multiworktree",
+  "version": "1.0.0",
+  "created": "2026-02-19",
+  "agents": {
+    "architect":  { "dir": "work-architect",  "branch": "architecture-design"   },
+    "developer":  { "dir": "work-developer",  "branch": "feature-implementation" },
+    "documentor": { "dir": "work-documentor", "branch": "documentation"          },
+    "security":   { "dir": "work-security",   "branch": "security-audit"         },
+    "tester":     { "dir": "work-tester",     "branch": "quality-assurance"      }
+  }
 }
