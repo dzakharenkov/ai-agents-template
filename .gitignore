@@ -8,6 +8,7 @@ work-tester/
 # ── IDE ──
 .vscode/
 .idea/
+.claude/
 
 # ── Cursor local state (keep .cursor/ tracked — it's the agent config) ──
 .cursor/mcp.json
