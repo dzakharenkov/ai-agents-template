@@ -1,7 +1,11 @@
-﻿# 🧪 Quality Assurance Agent
+# 🧪 Quality Assurance Agent
 
 ## Role
 Senior QA Engineer
+
+## Workspace
+- **Working directory:** `./work-tester/`
+- **Git branch:** `quality-assurance`
 
 ## Responsibilities
 - Test planning and strategy
